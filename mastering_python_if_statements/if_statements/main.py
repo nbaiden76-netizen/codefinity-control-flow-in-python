@@ -4,7 +4,7 @@ calories_goal = 300
 calories_goal_met = False  # default value
 
 # Check calories
-if calories_burned >= calories_goal:
+if calories_burned == calories_goal:
     calories_goal_met = True
 
 # Testing
