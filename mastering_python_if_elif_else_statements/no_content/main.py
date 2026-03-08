@@ -1,15 +1,14 @@
-workout_duration = 45
-message = ""
+exercise_time = 8 # Example value for total exercise time in hours
+title = ""
 
-# Check if the workout duration is more than 60 minutes
-if workout_duration > 60:
-    message = "Excellent job! You've worked out for over an hour!"
-# Check if the workout duration is between 30 and 60 minutes
-elif workout_duration >=30 and workout_duration <= 60:
-    message = "Great job! Keep it up!"
-# If the workout duration is less than 30 minutes
+if exercise_time > 10:
+    title = "Super Achiever"
+elif exercise_time >= 6 and exercise_time <= 10: 
+    title = "Hard Worker"
+elif exercise_time >= 3:
+    title = "Getting There"
 else:
-    message = "Try to aim for at least 30 minutes of exercise."
+    title = "Needs Improvement"
 
 # Testing
-print("Exercise feedback:", message)
+print("Your fitness level:", title)
